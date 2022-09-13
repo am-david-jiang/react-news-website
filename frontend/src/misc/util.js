@@ -1,0 +1,3 @@
+const displayDate = (date) => {
+  return `$`;
+};

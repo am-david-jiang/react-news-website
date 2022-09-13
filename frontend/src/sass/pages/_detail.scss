@@ -1,0 +1,18 @@
+@use "../components/recommended-news";
+@use "../components/more-news";
+@use "../components/news";
+
+.detail {
+  padding: 3.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: calc(2rem + 1px);
+
+  .news {
+    grid-column: 2 / span 7;
+  }
+
+  .more-news {
+    grid-column: span 4;
+  }
+}

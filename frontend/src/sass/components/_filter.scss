@@ -1,0 +1,22 @@
+.filter {
+  margin-top: 1.5rem;
+  font-family: inherit;
+
+  &-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    h5 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #303030;
+    }
+
+    a {
+      color: #444;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+  }
+}

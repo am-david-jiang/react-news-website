@@ -1,0 +1,34 @@
+@use "font";
+@use "reset";
+
+// Components
+@use "./components/sidebar";
+@use "./components/section";
+@use "./components/filter";
+
+// Pages SCSS Import
+@use "./pages/home";
+@use "./pages/detail";
+@use "./pages/manage";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(auto, 100px) 5fr;
+}
+
+.sidebar {
+  grid-column: 1;
+  height: 100%;
+}
+
+.home,
+.detail,
+.manage,
+.delete-page,
+.form-page {
+  grid-column: 2;
+  height: 100%;
+  overflow: auto;
+}

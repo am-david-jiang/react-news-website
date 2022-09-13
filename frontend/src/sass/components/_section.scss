@@ -1,0 +1,123 @@
+$border: 1px solid #ececec;
+$border-dark: 1px solid #6c6c6c;
+
+.article {
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  &-img {
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+
+  &-title {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.728rem;
+    line-height: 135%;
+    color: #303030;
+    // max-width: 15em;
+  }
+
+  &-abstract {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #444;
+    // max-width: 30em;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 1rem;
+  }
+
+  &-author,
+  &-date {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    img {
+      width: 21px;
+    }
+
+    p {
+      font-size: 0.833rem;
+      color: #888;
+    }
+  }
+
+  &-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+// Section List
+.section-list {
+  // border-left: $border;
+
+  .article {
+    gap: 0;
+
+    &-detail {
+      padding: 0.5rem 0;
+      border-bottom: $border;
+    }
+
+    &-title {
+      font-size: 0.875rem;
+    }
+
+    &-abstract {
+      font-size: 1rem;
+    }
+  }
+}
+// Full List
+.full-list {
+  margin-top: 1rem;
+  border-top: $border-dark;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  .article {
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+
+    &-img {
+      width: 200px;
+      aspect-ratio: 16 / 10;
+    }
+    &-detail {
+      flex-grow: 1;
+      gap: 0.25rem;
+    }
+    &-no-pic {
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.44rem;
+    }
+  }
+}

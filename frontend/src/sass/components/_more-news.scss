@@ -1,0 +1,28 @@
+$border: 1px solid #ececec;
+
+.more-news {
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 1.25rem;
+  position: relative;
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem;
+  }
+
+  &::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: calc(-1rem - 1px);
+    border-left: $border;
+  }
+}

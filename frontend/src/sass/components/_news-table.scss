@@ -1,0 +1,42 @@
+.news-table {
+  font-family: "Open Sans", sans-serif;
+  border-collapse: collapse;
+  thead {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    & tr {
+      background-color: #5c9edc;
+      & th {
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+
+  tbody {
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  tr,
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  td {
+    padding: 1rem 0.5rem;
+    // height: 5rem;
+
+    & .operation {
+      display: inline-flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+
+  tr:nth-child(even) td {
+    background-color: #edf4fa;
+  }
+}
